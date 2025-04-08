@@ -46,7 +46,7 @@ public class Card : MonoBehaviour
         else
         {
             GameManager.Instance.secondCard = this; //두 번째 카드 설정
-            GameManager.Instance.Matched(); //두번째 카드까지 열리면 매칭 확인
+            GameManager.Instance.checkMatched(); //두번째 카드까지 열리면 매칭 확인
         }
     }
 
