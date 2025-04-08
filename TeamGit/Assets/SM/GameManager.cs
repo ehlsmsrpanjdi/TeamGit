@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
@@ -31,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void checkMatched()
     {
-        if (firstCard.index == secondCard.index)
+        if (firstCard.idx == secondCard.idx)
         {
             firstCard.DestroyCard();
             secondCard.DestroyCard();
