@@ -30,7 +30,7 @@ public class Card : MonoBehaviour
     public void Setting(int number)
     {
         idx = number; //카드의 인덱스 설정
-        frontImage.sprite = Resources.Load<Sprite>("Card/" + number); //카드 앞면 이미지 설정
+        frontImage.sprite = Resources.Load<Sprite>($"JO{idx}"); //카드 앞면 이미지 설정
     }
 
     public void OpenCard()
