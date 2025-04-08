@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
+using Unity.Notifications.iOS;
 using UnityEngine;
 
 public class Card : MonoBehaviour
@@ -35,6 +36,8 @@ public class Card : MonoBehaviour
 
     public void OpenCard()
     {
+
+
         anim.SetBool("Open", true); //카드 애니메이션 실행
         front.SetActive(true); //카드 앞면 활성화
         back.SetActive(false); //카드 뒷면 비활성화

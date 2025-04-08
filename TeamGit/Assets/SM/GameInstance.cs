@@ -12,7 +12,6 @@ public class GameInstance : MonoBehaviour
     public string PlayLevel;
     public string LobbyLevel;
 
-
     public float gameVolume = 1.0f; //°ÔÀÓ º¼·ý
 
     public float GameVolume
