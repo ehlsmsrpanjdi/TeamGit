@@ -41,11 +41,13 @@ public class GameInstance : MonoBehaviour
     public void GameStart()
     {
         SceneManager.LoadScene(PlayLevel); //게임 씬 로드
+        BGMManager.Instance?.PlayGameMusic();//게임 씬 진입 시 게임 BGM 재생 - by정재우
     }
 
     public void BackToLobby()
     {
         SceneManager.LoadScene(LobbyLevel); //로비 씬 로드
+        BGMManager.Instance?.PlayLobbyMusic();//로비 씬 복귀시 로비 BGM 재생 - by정재우
     }
 
     public void GameEnd()
@@ -62,4 +64,5 @@ public class GameInstance : MonoBehaviour
     {
 
     }
+   
 }
