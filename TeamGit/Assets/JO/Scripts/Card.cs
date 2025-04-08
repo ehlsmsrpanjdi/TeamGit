@@ -46,15 +46,15 @@ public class Card : MonoBehaviour
         else
         {
             GameManager.Instance.secondCard = this; //두 번째 카드 설정
-            GameManager.Instance.Matched(); //두번째 카드까지 열리면 매칭 확인
+            //gamemanager.instance.matched(); //두번째 카드까지 열리면 매칭 확인
         }
     }
 
-    public void Destroy() // 카드 파괴
+    public void DestroyCard() // 카드 파괴
     {
-        Invoke("DestroyCard", 0.5f); //0.5초 후 카드 파괴
+        Invoke("DestroyCardInvoke", 0.5f); //0.5초 후 카드 파괴
     }
-    void InvokeDestroyCard()
+    void DestroyCardInvoke()
     {
         Destroy(gameObject); //카드 오브젝트 파괴
     }

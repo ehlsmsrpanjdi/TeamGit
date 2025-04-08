@@ -31,16 +31,16 @@ public class GameManager : MonoBehaviour
 
     public void checkMatched()
     {
-        if (firstCard.index == secondCard.index)
-        {
-            firstCard.DestroyCard();
-            secondCard.DestroyCard();
-        }
-        else
-        {
+        //if (firstCard.index == secondCard.index)
+        
+            //firstCard.DestroyCard();
+            //secondCard.DestroyCard();
+        
+        
+       
             firstCard.CloseCard();
             secondCard.CloseCard();
-        }
+       
 
         firstCard = null;
         secondCard = null;
