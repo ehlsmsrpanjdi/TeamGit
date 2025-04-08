@@ -10,7 +10,7 @@ public class Board : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int[] arr = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, };
+        int[] arr = { 0, 0, 1, 1, 2, 2, 0, 0, 1, 1, 2, 2, };
         arr = arr.OrderBy(x => Random.Range(0f, 10f)).ToArray();
 
 
@@ -22,7 +22,7 @@ public class Board : MonoBehaviour
             float y = (i / 4) * 1.4f - 2.3f;
 
             go.transform.position = new Vector2(x, y);
-            go.GetComponent<Card>().idx = arr[i];
+            go.GetComponent<Card>().Setting(arr[i]);
         }
     }
 
