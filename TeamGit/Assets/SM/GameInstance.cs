@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameInstance : MonoBehaviour
 {
+
+    string PlayLevel;
+    string LobbyLevel;
+
     // Start is called before the first frame update
     void Start()
     {
