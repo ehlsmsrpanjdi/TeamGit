@@ -50,11 +50,11 @@ public class Card : MonoBehaviour
         }
     }
 
-    public void Destroy() // 카드 파괴
+    public void DestroyCard() // 카드 파괴
     {
-        Invoke("DestroyCard", 0.5f); //0.5초 후 카드 파괴
+        Invoke("DestroyCardInvoke", 0.5f); //0.5초 후 카드 파괴
     }
-    void InvokeDestroyCard()
+    void DestroyCardInvoke()
     {
         Destroy(gameObject); //카드 오브젝트 파괴
     }
