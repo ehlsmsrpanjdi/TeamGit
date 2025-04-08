@@ -29,9 +29,20 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public bool CardCheck()
+    public void checkMatched()
     {
-        //if(firstCard)
-        return false;
+        if (firstCard.index == secondCard.index)
+        {
+            firstCard.DestroyCard();
+            secondCard.DestroyCard();
+        }
+        else
+        {
+            firstCard.CloseCard();
+            secondCard.CloseCard();
+        }
+
+        firstCard = null;
+        secondCard = null;
     }
 }
