@@ -7,7 +7,6 @@ public class Board : MonoBehaviour
 {
     public GameObject card;
 
-    // Start is called before the first frame update
     void Start()
     {
         int[] arr = { 0, 0, 1, 1, 2, 2, 0, 0, 1, 1, 2, 2, };
