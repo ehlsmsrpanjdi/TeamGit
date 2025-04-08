@@ -48,8 +48,8 @@ public class GameManager : MonoBehaviour
             if(cardCount == 0)
             {
                 Time.timeScale = 0.0f; //게임 종료
-                RetryTxt.SetActive(false);
-                EndTxt.SetActive(false);
+                RetryTxt.SetActive(true);
+                EndTxt.SetActive(true);
             }
         }
         else

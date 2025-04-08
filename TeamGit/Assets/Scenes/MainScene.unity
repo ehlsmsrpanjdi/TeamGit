@@ -306,6 +306,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstCard: {fileID: 0}
   secondCard: {fileID: 0}
+  RetryTxt: {fileID: 1824375641}
+  EndTxt: {fileID: 401586160}
+  cardCount: 0
 --- !u!1 &1108289754
 GameObject:
   m_ObjectHideFlags: 0
