@@ -14,11 +14,14 @@ public class Card : MonoBehaviour
 
     public SpriteRenderer frontImage; //카드 앞면 이미지 스프라이트 렌더러
 
+    AudioSource audioSource; //오디오 소스
+    public AudioClip clip; //카드 뒤집기 소리
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>(); //오디오 소스 컴포넌트 가져오기
     }
 
     // Update is called once per frame
@@ -35,6 +38,8 @@ public class Card : MonoBehaviour
 
     public void OpenCard()
     {
+       
+        audioSource.PlayOneShot(clip); //카드 뒤집기 소리 재생
         anim.SetBool("Open", true); //카드 애니메이션 실행
         front.SetActive(true); //카드 앞면 활성화
         back.SetActive(false); //카드 뒷면 비활성화
