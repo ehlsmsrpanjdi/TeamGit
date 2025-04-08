@@ -23,6 +23,6 @@ public class Board : MonoBehaviour
             go.transform.position = new Vector2(x, y);
             go.GetComponent<Card>().Setting(arr[i]);
         }
-        GameManager.Instance.CardCount = arr.Length; //카드 개수 설정
+        GameManager.Instance.cardCount = arr.Length; //카드 개수 설정
     }  
 }
