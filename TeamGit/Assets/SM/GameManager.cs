@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject RetryTxt;
     public GameObject EndTxt;
 
+
     public int cardCount = 0; //카드 개수
 
     // Start is called before the first frame update
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
 
