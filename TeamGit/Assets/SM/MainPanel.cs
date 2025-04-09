@@ -8,10 +8,25 @@ public class MainPanel : MonoBehaviour
     public GameObject GamePanel;
     public GameObject SoundPanel;
 
+
+    static public MainPanel instance = null;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        if (MainPanel.instance == null)
+        {
+            MainPanel.instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        
+
     }
 
     public void OnClickGamePanel()
@@ -29,6 +44,6 @@ public class MainPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -24,8 +24,7 @@ public class GameInstance : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         if (GameInstance.Instance == null)
         {
@@ -36,6 +35,11 @@ public class GameInstance : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+ 
     }
 
     public void GameStart()
