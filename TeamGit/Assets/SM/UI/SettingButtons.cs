@@ -12,10 +12,6 @@ public class SettingButtons : MonoBehaviour
     void Start()
     {
         MyButton = GetComponent<Button>();
-        if(MainPanel.instance == null)
-        {
-            int a = 0;
-        }
         MyButton.onClick.AddListener(MainPanel.instance.OnClickSoundPanel);
     }
 

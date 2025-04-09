@@ -66,7 +66,14 @@ public class GameInstance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            BackToLobby();
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            GameStart();
+        }
     }
    
 }
